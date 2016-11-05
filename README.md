@@ -21,9 +21,8 @@ c.WordPressAuthenticator.dbuser = "yourDatabaseUserName"
 c.WordPressAuthenticator.dbpassword = "yourDatabasePassword"
 ```
 
-*`dbuser` : user name to access your wordpress database
-
-*`dbpassword` : password to access your wordpress database
+* `dbuser` : user name to access your wordpress database
+* `dbpassword` : password to access your wordpress database
 
 Next lines are optional:
 ```
@@ -32,13 +31,10 @@ c.WordPressAuthenticator.dbport = "3306"
 c.WordPressAuthenticator.dbname = "wordpress"
 c.WordPressAuthenticator.table_prefix = "wp_"
 ```
-*`dbhost` : URL or IP address of the database server (Default : `localhost`)
-
-*`dbport` : port of the database server (Default : `3306`)
-
-*`dbname` : database name that your wordpress uses (Default : `wordpress`)
-
-*`table_prefix` : table prefix for your wordpress (Default : `wp_`)
+* `dbhost` : URL or IP address of the database server (Default : `localhost`)
+* `dbport` : port of the database server (Default : `3306`)
+* `dbname` : database name that your wordpress uses (Default : `wordpress`)
+* `table_prefix` : table prefix for your wordpress (Default : `wp_`)
 
 ## License
 MIT License

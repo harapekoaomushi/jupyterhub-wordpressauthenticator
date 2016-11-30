@@ -9,7 +9,7 @@ def _requires_from_file(filename):
 
 setup_args = dict(
     name='jupyterhub-wordpressauthenticator',
-    version='0.1',
+    version='0.1.1',
     description='WordPress Authenticator for JupyterHub',
     url='https://github.com/harapekoaomushi/jupyterhub-wordpressauthenticator',
     author='Harapeko Aomushi',

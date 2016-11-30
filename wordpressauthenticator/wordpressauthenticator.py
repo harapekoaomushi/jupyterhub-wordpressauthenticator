@@ -29,13 +29,13 @@ class WordPressAuthenticator(Authenticator):
 
         with pymysql.connect(**args) as cursor:
             sql =   "SELECT " \
-                            "user_pass " \
+                        "`user_pass` " \
                     "FROM " \
-                            "{0}users " \
+                        "`{0}users` " \
                     "WHERE " \
-                            "user_login = \"{1}\"" \
-                    .format(self.table_prefix, data["username"])
-            if cursor.execute(sql) == 0:
+                        "`user_login` = %s" \
+                    .format(self.table_prefix)
+            if cursor.execute(sql, (data["username"], )) == 0:
                 return None
             if phpass.verify(data["password"],cursor.fetchone()[0]) == True:
                 return data["username"]
